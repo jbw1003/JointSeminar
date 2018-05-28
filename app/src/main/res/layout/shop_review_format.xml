@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/shop_review_card_view"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        card_view:contentPadding="16dp"
+        android:layout_margin="16dp"
+        card_view:cardBackgroundColor="#A52A2A"
+        card_view:cardElevation="8dp"
+        card_view:cardCornerRadius="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/shop_review_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="아이디"
+                    android:textSize="18sp"
+                    android:textColor="#000"/>
+                
+                <TextView
+                    android:id="@+id/shop_review_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="10:56"
+                    android:textColor="#909090"/>
+                
+            </RelativeLayout>
+            
+            <ImageView
+                android:id="@+id/shop_review_img"
+                android:layout_margin="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_action_sample"/>
+
+            <TextView
+                android:id="@+id/shop_review_text"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Everything is good and brown I'm here again With a sunshine smile upon my face My friends are close at hand And all my inhibitions have disappeared without a trace I'm glad, oh, that I found Ooh, somebody who I can rely on"/>
+
+        </LinearLayout>
+        
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>
